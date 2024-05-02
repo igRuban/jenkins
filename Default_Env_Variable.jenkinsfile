@@ -1,9 +1,5 @@
 pipeline{
      agent any
-
-       parameters {
-        booleanParam(name: 'TOMAN', defaultValue: false, description: 'Do you like T O M A N ? ')
-    }
      stages{
          stage(' Default Environmental Variable'){
 
