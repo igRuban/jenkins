@@ -1,0 +1,29 @@
+pipeline{
+     agent any
+     
+     stages{
+         stage(' Default Environmental Variable'){
+             steps{
+              
+               echo "${MADARA}"
+               echo "$MADARA"
+               echo "$BUILD_NUMBER"
+               echo "${JOB_NAME}"
+               echo "$BUILD_ID"
+               echo "$BUILD_DISPLAY_NAME"
+               echo "$JOB_NAME"
+               echo "$JOB_BASE_NAME"
+               echo "$EXECUTOR_NUMBER"
+               echo "$BUILD_TAG = $JOB_NAME  - $BUILD_NUMBER"
+               echo "$NODE_NAME"
+               echo "$NODE_LABELS"
+               echo "$WORKSPACE"
+               echo "$JENKINS_HOME"
+               echo "$JENKINS_URL"
+               echo "$BUILD_URL"
+               echo "$JOB_URL"
+
+             }
+         }
+     }
+}
