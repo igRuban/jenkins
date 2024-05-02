@@ -5,8 +5,7 @@ pipeline{
          stage(' Default Environmental Variable'){
              steps{
               
-               echo "${MADARA}"
-               echo "$MADARA"
+              
                echo "$BUILD_NUMBER"
                echo "${JOB_NAME}"
                echo "$BUILD_ID"
